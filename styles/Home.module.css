@@ -1,0 +1,203 @@
+/*INDEX*/
+
+/* Contenedor principal */
+.container {
+    font-family: Arial, sans-serif;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 20px;
+    background-color: #f0f4f8;
+}
+
+/* Título principal */
+.title {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 2em;
+}
+
+/* Estilo para el campo de búsqueda */
+.searchInput {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 30px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Lista de personajes */
+.characterList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Espacio entre los elementos */
+    justify-content: center; /* Centra los elementos en la fila */
+}
+
+/* Elementos de la lista de personajes */
+.characterItem {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1 1 calc(33.333% - 40px); /* Toma 1/3 del ancho del contenedor con espacio para el gap */
+    max-width: calc(33.333% - 40px);
+    box-sizing: border-box;
+}
+
+/* Nombre del personaje */
+.characterName {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Contenedor de la imagen */
+.characterImageContainer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+/* Imagen del personaje */
+.characterImage {
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Botón para ver detalles */
+.detailsButton {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 24px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.detailsButton:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.detailsButton:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+/* Contenedor de botones de paginación */
+.pagination {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.paginationButton {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.paginationButton:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.paginationButton:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+/*Descipcion Personaje*/
+.characterDetailContainer {
+    font-family: Arial, sans-serif;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Título del detalle del personaje */
+.characterDetailTitle {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+}
+
+/* Imagen del personaje en detalles */
+.characterDetailImage {
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px auto;
+}
+
+/* Botón de volver */
+.backButton {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 24px;
+    cursor: pointer;
+    font-size: 16px;
+    display: block;
+    margin: 0 auto 20px auto;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.backButton:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.backButton:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+/* Sección de información */
+.characterDetailSection {
+    margin-bottom: 20px;
+}
+
+/* Títulos de las secciones */
+.characterDetailSectionTitle {
+    font-size: 1.5em;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Lista de detalles */
+.characterDetailList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.characterDetailList li {
+    margin-bottom: 5px;
+}
