@@ -2,25 +2,30 @@
 
 /* Contenedor principal */
 .container {
+    background-image: url('../src/images/fondo1.gif'); 
+    background-size: tile; 
+    background-position: center; 
     font-family: Arial, sans-serif;
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 1500px;
     padding: 20px;
-    background-color: #f0f4f8;
+    background-color: #333;
 }
 
 /* Título principal */
 .title {
     text-align: center;
-    color: #333;
+    color: #fff;
+    font-family: Cooper Black, 'Times New Roman', Times, serif;
     margin-bottom: 30px;
-    font-size: 2em;
+    font-size: 2.8em;
 }
 
 /* Estilo para el campo de búsqueda */
 .searchInput {
     display: block;
-    width: 100%;
+    width: 60%;
+    margin-left: 20%;
     padding: 12px;
     margin-bottom: 30px;
     border: 1px solid #ddd;
@@ -31,6 +36,7 @@
 
 /* Lista de personajes */
 .characterList {
+    
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -38,6 +44,7 @@
     flex-wrap: wrap;
     gap: 20px; /* Espacio entre los elementos */
     justify-content: center; /* Centra los elementos en la fila */
+    
 }
 
 /* Elementos de la lista de personajes */
@@ -45,7 +52,7 @@
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 20px;
-    background-color: #fff;
+    background-color: rgba(230, 230, 250, 0.8);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
     flex: 1 1 calc(33.333% - 40px); /* Toma 1/3 del ancho del contenedor con espacio para el gap */
@@ -66,6 +73,7 @@
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
+    
 }
 
 /* Imagen del personaje */
@@ -131,7 +139,8 @@
     margin: 0 auto;
     max-width: 800px;
     padding: 20px;
-    background-color: #f9f9f9;
+    background-color: rgba(230, 230, 250, 0.8);
+    
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
